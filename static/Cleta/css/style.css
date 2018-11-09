@@ -1,0 +1,280 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  width: 36px;
+  font-size: 24px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  top: -10px;
+}
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+
+#logo{
+    width: 80px;
+    }
+
+
+#viajes{
+    margin-left: 60px;
+}
+
+#bici{
+    margin-left: 60px;
+}
+
+#pagos{
+    margin-left: 60px;
+}
+
+body { padding-top: 170px; 
+      background-image: url("/static/Cleta/imagenes/fondo.jpg");
+      background-size: 100% 100%;
+      background-size: 500px 550px;
+      background-attachment: fixed;
+}
+
+
+#barrita{
+  background-color: #ff8c37;
+}
+
+#home{
+  color: black;
+}
+#viajes{
+  color: black;
+}
+#bici{
+  color: black;
+}
+#icon_pago{
+  color: black;
+}
+
+#pago1{
+
+  background-color:rgba(255,175,75,1);
+}
+#pago2{
+
+  background-color:rgba(255,175,75,1);
+}
+
+footer{
+  background-color: #ff8c31;
+  margin-top: 100px;
+  color: black;
+}
+
+#boton {
+  display: inline-block;
+  border-radius: 6px;
+  border :2px solid #00080f;
+  color: #00080f;
+  text-align: center;
+  font-size: 20px;
+  width: 110px;
+  height: 50px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#articulousuario{
+
+  background-color: orange;
+  border-radius: 10px;
+  border: 2px solid #fd8310;
+}
+
+#cajitafeliz{
+
+  background-color: #e4451b;
+  padding: 7px 7px;
+  margin-bottom: 20px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: #fd4637 5px 5px 10px;
+  text-shadow: white 2px 2px 3px;
+
+}
+#cajitafeliz:hover{
+-moz-transform: scale(1.2);
+}
+
+#cajalogin{
+  border-radius: 10px;
+  box-shadow: #fd4637 5px 5px 10px;
+  background-color: orange;
+}
+#cajalogin2{
+
+  background-color: orange;
+}
+
+#ingresa{
+
+  margin-bottom: 35px;
+}
+
+#articulopago{
+
+  border-radius: 10px;
+  box-shadow: #fd4637 5px 5px 10px;
+  background-color: orange;
+}
+#articulopago2{
+
+
+  background-color: orange;
+}
+#articulopago3{
+  color: black;
+  background-color: orange;
+}
+
+#cajavinculo1{
+  background-color: #e4451b;
+  padding: 7px 7px;
+  margin-bottom: 20px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: #fd4637 5px 5px 10px;
+  text-shadow: white 2px 2px 3px;
+
+
+}
+#cajavinculo2{
+  color: black;
+}
+
+#cajavinculo2:link {
+  text-decoration: none;
+}
+
+#cajavinculo2:visited {
+  text-decoration: none;
+}
+
+#cajavinculo2:hover {
+  text-decoration: underline;
+}
+
+#cajavinculo2:active {
+  text-decoration: underline;
+}
+#icon_logout{
+  color: black;
+  padding-left: 80px;
+
+}
+#icon_ingreso{
+  color: black;
+  padding-left: 80px;
+
+}

@@ -1,0 +1,116 @@
+{% load static %}
+
+<!doctype html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'Cleta/css/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'Cleta/css/style2.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Mobike</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-icon-top navbar-expand-lg fixed-top" id="barrita">
+        <a class="navbar-brand" href="{% url 'index'%}"><img class ="img-responsive" src="{% static 'Cleta/imagenes/logo2.png'%}" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+            <li class="nav-item disabled">
+                <a class="nav-link disabled" href="#"id="home">
+                <i class="fa fa-home"></i>
+                Home
+                
+                </a>
+            </li>
+            <li class="nav-item" id="viajes">
+                <a class="nav-link disabled" href="#" id="viajes">
+                <i class="fa fa-suitcase">
+                 
+                </i>
+                Viajes
+                </a>
+            </li>
+            <li class="nav-item disabled" id="bici">
+                <a class="nav-link disabled " href="#" id="bici" >
+                <i class="fa fa-map-marker">
+                   
+                </i>
+                Bicicletas
+                </a>
+            </li>
+            <li class="nav-item" id="pagos">
+                <a class="nav-link disabled" href="#" id="icon_pago">
+                <i class="fa fa-credit-card-alt">
+                   
+                </i>
+                Pagos
+                </a>
+            </li>
+            <li class="nav-item" id="Login">
+                <a class="nav-link" href="{% url 'user_login'%}" id="icon_login">
+                <i class="fa fa-user">
+                   
+                </i>
+                Login
+                </a>
+            </li>  
+            </ul>
+        </div>
+        </nav>
+    </header>
+<div class="container" id="cajagorda">
+    <div class="jumbotron" id="menosgorda">
+      {% if registered %}
+        <h1>Te has registrado correctamente!</h1>
+        <br></br>
+        <br></br>
+        <p>Ahora puedes iniciar sesión!!</p>
+        <div class="text-center">
+                        
+            <a href="{% url 'user_login'%}">
+                <button type="button" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-user"></span> Login</button>
+            </a>
+        </div>
+
+      {% else %}
+        <h1>Regístrese aquí</h1>
+        <h3>Complete el formulario</h3>
+        <br></br>
+<div class="container" id="formnuevo">
+    <div class="row">
+        <div class="col-sm-6 mx-auto" style="margin-top: 70px">
+            <form enctype="multipart/form-data" method="POST" id="registrate">
+                {% csrf_token %}
+                    {{ user_form.as_p }}
+                    {{ profile_form.as_p }}
+          <div class="pull-right">
+            <button type="submit" class="btn btn-primary btn-primary" value="register"> Registrar</button>
+         </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+      {% endif %}
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
